@@ -8,3 +8,6 @@ sudo terraform fmt
 sudo terraform validate
 aws eks --region us-east-1 update-kubeconfig --name your-cluster-name
 kubectl apply -f all-files
+
+
+Also added are the history files that you can relate to exactly install the tools as per my dependencies.
