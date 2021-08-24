@@ -4,3 +4,5 @@ Change Directory where code sits.
 sudo docker-compose up --build -d
 sudo docker ps
 sudo docker-compose run web /usr/local/bin/python manage.py migrate
+
+Also added are the history files that you can relate to exactly install the tools as per my dependencies.
