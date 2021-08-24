@@ -1,0 +1,6 @@
+Install docker
+Install docker-compose
+Change Directory where code sits.
+sudo docker-compose up --build -d
+sudo docker ps
+sudo docker-compose run web /usr/local/bin/python manage.py migrate

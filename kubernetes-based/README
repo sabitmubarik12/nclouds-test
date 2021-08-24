@@ -1,0 +1,10 @@
+Install Terraform
+Install AWSCLI
+Install Kubectl
+Change directory where code sits
+sudo terraform init
+sudo terraform plan
+sudo terraform fmt
+sudo terraform validate
+aws eks --region us-east-1 update-kubeconfig --name your-cluster-name
+kubectl apply -f all-files

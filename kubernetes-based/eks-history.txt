@@ -1,0 +1,114 @@
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+cd ..
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+chmod +x ./kubectl
+sudo mv ./kubectl /usr/local/bin/kubectl
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+minikube version
+sudo -i
+sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+sudo apt-get update && sudo apt-get install terraform
+terraform
+ls
+cd dockerizing-django-master/
+terraform init
+ls
+ls -lah
+terraform plan
+terraform init
+cd ..
+cd learn-terraform-provision-eks-cluster/
+ls
+ls -lah
+cat eks-cluster.tf 
+ls
+cat kubernetes
+cat kubernetes-dashboard-admin.rbac.yaml 
+cat kubernetes.tf 
+cat outputs.tf 
+ls
+cat security-groups.tf 
+ls
+cat versions.tf 
+cat vpc.tf 
+sudo nano vpc.tf 
+ls
+sudo cp *.tf ../dockerizing-django-master/
+cd ../dockerizing-django-master/
+ls
+terraform plan
+sudo terraform plan
+terraform init
+ls -lah ../learn-terraform-provision-eks-cluster/
+cat ../learn-terraform-provision-eks-cluster/
+cat ../learn-terraform-provision-eks-cluster/.terraform.lock.hcl 
+sudo cp ../learn-terraform-provision-eks-cluster/.terraform.lock.hcl .
+ls
+ls -lah
+terraform init
+ls -lah
+terraform init
+sudo terraform init
+sudo terraform plan
+sudo terraform fmt
+sudo terraform verify
+sudo terraform validate
+aws configure
+sudo terraform apply
+sudo terraform show
+aws eks --region us-east-1 update-kubeconfig --name education-eks-5p5ZiKlT
+ls
+aws eks --region us-east-1 update-kubeconfig --name education-eks-5p5ZiKlT
+kubectl get nodes
+kubectl get svc
+history
+history > eks.txt
+sudo history > eks.txt
+history > ../eks.txt
+ls -lah | grep "*.yaml"
+ls
+ls -lah | grep *.yaml
+ls -lah | "grep *.yaml"
+ls -lah | grep "*.yaml"
+ls | grep "*.yaml"
+ls grep "*.yaml"
+ls -lah "*.yaml"
+ls
+ls -lah
+ls -lah | grep .yml
+ls -lah | grep .yaml
+ls -lah | grep .yaml | awk $5
+ls -lah | grep .yaml
+ls -lah | grep .yaml | tail
+ls -lah | grep .yaml | awk 'NR==4'
+ls -lah | grep .yaml | awk 'NC==4'
+ls -lah | grep .yaml | awk '{print $9}'
+ls -lah
+ls -lah | grep .yaml | awk '{print $9}'
+ls -lah | grep .yaml
+wc | ls -lah | grep .yaml | awk '{print $9}'
+wc(ls -lah | grep .yaml | awk '{print $9}')
+wc ls -lah | grep .yaml | awk '{print $9}'
+ls -lah | grep .yaml | awk '{print $9}' | wc
+ls -lah | grep .yaml | awk '{print $9}' | wc -l
+ls -lah | grep .yaml | wc -l
+ls -lah | grep .yaml | awk '{print $9}'
+ls -lah | grep .yaml | awk '{print $9}' > ../yamls.txt
+cd ..
+ls
+cat yamls.txt 
+sed -i ':a;N;$!ba;s/\n/,/g' yamls.txt 
+cat yamls.txt 
+ls -lah | grep .yaml | awk '{print $9}' | sed -i ':a;N;$!ba;s/\n/,/g'
+cd dockerizing-django-master/
+kubectl apply -f ../yamls.txt 
+kubectl apply -f ../yamls.txt --validate-false
+kubectl apply -f ../yamls.txt --validate=false
+kubectl apply -f $(cat ../yamls.txt)
+kubectl get all
+terraform destroy
+sudo terraform destroy
+history
+history > ../eks-history.txt

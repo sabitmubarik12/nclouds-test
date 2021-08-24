@@ -1,0 +1,164 @@
+ls | grep *.yaml
+ls | grep "*.yaml"
+ls | grep ".yaml"
+sudo zip -r kube-files.zip $(ls | grep ".yaml")
+ls
+pwd
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+cd ..
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+chmod +x ./kubectl
+sudo mv ./kubectl /usr/local/bin/kubectl
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+minikube version
+sudo -i
+
+ minikube start --vm-driver=none
+ minikube status
+ apt-get install -y conntrack
+ minikube start --vm-driver=none
+ minikube status
+ kubectl
+ kubectl apply -f $(ls | grep "*.yaml")
+ cd do
+ ls
+ cd /
+ ls
+ cd usr/
+ ls
+ cd ..
+ ls
+ cd home/
+ ls
+ cd ubuntu/
+ ls
+ cd dockerizing-django-master/
+ kubectl apply -f $(ls | grep "*.yaml")
+ kubectl apply -f env-configmap.yaml nginx-deployment.yaml nginx-service.yaml pgdata-persistentvolumeclaim.yaml postgres-deployment.yaml postgres-service.yaml redis-deployment.yaml redis-service.yaml redisdata-persistentvolumeclaim.yaml web-deployment.yaml web-django-persistentvolumeclaim.yaml web-service.yam web-static-persistentvolumeclaim.yaml
+ kubectl apply -f env-configmap.yaml,nginx-deployment.yaml,nginx-service.yaml,pgdata-persistentvolumeclaim.yaml,postgres-deployment.yaml,postgres-service.yaml,redis-deployment.yaml,redis-service.yaml,redisdata-persistentvolumeclaim.yaml,web-deployment.yaml,web-django-persistentvolumeclaim.yaml,web-service.yam,web-static-persistentvolumeclaim.yaml
+ kubectl apply -f env-configmap.yaml,nginx-deployment.yaml,nginx-service.yaml,pgdata-persistentvolumeclaim.yaml,postgres-deployment.yaml,postgres-service.yaml,redis-deployment.yaml,redis-service.yaml,redisdata-persistentvolumeclaim.yaml,web-deployment.yaml,web-django-persistentvolumeclaim.yaml,web-service.yaml,web-static-persistentvolumeclaim.yaml
+ kubectl
+ kubectl get all
+ clear
+ kubectl get all
+ cat docker-compose.yml 
+ docker images
+ kubectl get all
+ kubectl logs pod/web-6958cf4c9c-tq4md
+ kubectl
+ kubectl get all
+ kubectl describe po web-6958cf4c9c-tq4md
+ ls
+ cat docker-compose.yml 
+ ls
+ cd web/
+ ls
+ cat Dockerfile 
+ docker images
+ aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 196236753581.dkr.ecr.us-east-1.amazonaws.com
+ apt  install awscli
+ aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 196236753581.dkr.ecr.us-east-1.amazonaws.com
+ aws configure
+ aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 196236753581.dkr.ecr.us-east-1.amazonaws.com
+ docker images
+ docker tag python:3.7-slim 196236753581.dkr.ecr.us-east-1.amazonaws.com/kubernetes:latest
+ docker images
+ docker push 196236753581.dkr.ecr.us-east-1.amazonaws.com/kubernetes:latest
+ ls
+ cd ..
+ ls
+ sudo nano docker-compose.yml 
+ sudo nano web-service.yaml 
+ sudo nano web-deployment.yaml 
+ ls
+ kubectl 
+ kubectl delete $
+ kubectl delete env-configmap.yaml,nginx-deployment.yaml,nginx-service.yaml,pgdata-persistentvolumeclaim.yaml,postgres-deployment.yaml,postgres-service.yaml,redis-deployment.yaml,redis-service.yaml,redisdata-persistentvolumeclaim.yaml,web-deployment.yaml,web-django-persistentvolumeclaim.yaml,web-service.yaml,web-static-persistentvolumeclaim.yaml
+ kubectl delete -f env-configmap.yaml,nginx-deployment.yaml,nginx-service.yaml,pgdata-persistentvolumeclaim.yaml,postgres-deployment.yaml,postgres-service.yaml,redis-deployment.yaml,redis-service.yaml,redisdata-persistentvolumeclaim.yaml,web-deployment.yaml,web-django-persistentvolumeclaim.yaml,web-service.yaml,web-static-persistentvolumeclaim.yaml
+ kubectl apply -f env-configmap.yaml,nginx-deployment.yaml,nginx-service.yaml,pgdata-persistentvolumeclaim.yaml,postgres-deployment.yaml,postgres-service.yaml,redis-deployment.yaml,redis-service.yaml,redisdata-persistentvolumeclaim.yaml,web-deployment.yaml,web-django-persistentvolumeclaim.yaml,web-service.yaml,web-static-persistentvolumeclaim.yaml
+ kubectl get all
+ kubectl delete -f env-configmap.yaml,nginx-deployment.yaml,nginx-service.yaml,pgdata-persistentvolumeclaim.yaml,postgres-deployment.yaml,postgres-service.yaml,redis-deployment.yaml,redis-service.yaml,redisdata-persistentvolumeclaim.yaml,web-deployment.yaml,web-django-persistentvolumeclaim.yaml,web-service.yaml,web-static-persistentvolumeclaim.yaml
+ aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/p4y8m7h4
+ docker images
+ docker tag python:3.7-slim public.ecr.aws/p4y8m7h4/sabit:latest
+ docker push public.ecr.aws/p4y8m7h4/sabit:latest
+ aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/p4y8m7h4
+  (aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/p4y8m7h4)
+ aws ecr get-login --region us-east-1
+ docker login -u AWS -p eyJwYXlsb2FkIjoiSzdjN2JpblRuTmxSa2pqY1JDeUxYUkdqRnNxU3hBV25ZdXNGS1oxTFgzOWhrRHlyMHFDOWdSb1ExZ0I4QVFFeFlWZlE4RSt2OWozR2lmNVZOdWFqQ2FPVys2NndpKzFFcm1DRG80SG1SVXRuRUJEcjI4Rk45QzdzUHVDSGJ5VHJVZVNzaVR5bFNPYVV3czF2Uk9oaWY1bU9oQ3dOOE9lbmVKRWdPc0Jaa1lBSmxxeGNjUlB1RDBnbmJOZ25yUU5rNGhpVXh0YSs1WFFIb3duNHN5K3RKWXh6UW9IbmZLMU95SHl1c2tnTmJGekxHSzliTXBleXM0T2E1eFBxVUxMeUhXVVg0SjJEY0xjNG8rNFpraFBPdXhSbzlucWx5WHdtNXYvL21ZU2pxcVkzTEtQdTlDcXdVV0NjRkxXK01RMWl5WEpVcGdtYityYTZtME5NYlRrcElxOW5LOHQzelhXNDRScW9yVjN2VTR6L25rU1p3ZCtBMmxXT1dWdVY4SC9oZThCTDd6Nm5LODMrWElLTjZlbHI0eGd0b3lrSngzbzF1Z2xyaGN1MmlNWExTTS8yMmpaZTNLOWgyc0hveFlvaXhnNG00RndVODZYN2xSNXpDeDk1NDV1MGc5bEJVUHdNWG11QklkS3JITGhtbEEyTHoxWXFpNHZWYmZNb3BOKzdYRU5oQnljUVRmWWJKRzh2UVJ4aGhmYlNKaHp3VDBuanhZRk5FVVVQOFJzZ3Z6YTJ2bkpxYWVKWVQ5TnEwUm5KelpneWVDL3Q2Uk52Q3dHbE15RE05RXM0WHRNL1NUZXZVeXlxS0ZzTG9HKzNoMUpSeFJsQ0Q3a2hrcXRXc0dhV3RUUEdjbTVDK29vZFFuT3BYR0YvQ1lYWVlCTzBSL0EwVWo2MVhQU08yRnBlaDFBcUUwdGFVM1I3RkN4QXBlR05QRlNjQUhVZ3R4cmMrd09zQ2d1S0gvakdySVNKbXUva21RU29mcExqajh0dzMwdmRDc2NxTmVDQldFeVNLZ1dZK0ppcjVWb3BHK2RJT0tMaUhzV3hPVnd1MENhWEozU0dWbXkyaUlKenRQL291NUFVNkhseUVucXNCN3NTdFF6SlJ4dkozS2FGNGU4eHkxK2grZFNNRHM0K0ppZnQrbm5TU1NlYTh1MDlKMUR1TGFKRUYxcy80QUU1ZGw2TG5waUtsMWE0Vi9EK0FEeWZ0a3FrclVEUmlqVVJkVCtlMTZSeDFiR3ZPNm1MN2RGUlBDZ2ZvQmNDNC9zTDJ6WGlFNU1nVHpnRnkrVXdWTkIybWZPUXFQbmNqMkQycUtZN2gyS0w5dFdWTVE1V3ZiMWVsSHo4YkV3S2hsVmFTd29vSDRXMzZ1c3VyL3M3WnNxcjN5Uk5aZi91T1BwdHd0NVhHTGhZUDFRZlBpZFFGaUVGUGRMQk5rd09MRHRJUEhGd3hZRVRsb2Y2RHM5NE5LdzNiY04vNXNQN1lqcE5weUtqIiwiZGF0YWtleSI6IkFRRUJBSGh3bTBZYUlTSmVSdEptNW4xRzZ1cWVla1h1b1hYUGU1VUZjZTlScTgvMTR3QUFBSDR3ZkFZSktvWklodmNOQVFjR29HOHdiUUlCQURCb0Jna3Foa2lHOXcwQkJ3RXdIZ1lKWUlaSUFXVURCQUV1TUJFRURKc3pvUXVteG5NcVlkaUwrQUlCRUlBNzFmaVp0Qjd5K1BIdXBJUmJER2RESEJLaUozVW1oSStvQ1NKK1VkOTN4NnJ3MEFmaWJ5aWhzMDl6NVZGWS9YbTNnancxVmltMEpCYmsyUUE9IiwidmVyc2lvbiI6IjIiLCJ0eXBlIjoiREFUQV9LRVkiLCJleHBpcmF0aW9uIjoxNjI5NjkyNzUyfQ== -e none https://196236753581.dkr.ecr.us-east-1.amazonaws.com
+ aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/p4y8m7h4
+ aws ecr-public --region us-east-1 | docker login --username AWS -p eyJwYXlsb2FkIjoiSzdjN2JpblRuTmxSa2pqY1JDeUxYUkdqRnNxU3hBV25ZdXNGS1oxTFgzOWhrRHlyMHFDOWdSb1ExZ0I4QVFFeFlWZlE4RSt2OWozR2lmNVZOdWFqQ2FPVys2NndpKzFFcm1DRG80SG1SVXRuRUJEcjI4Rk45QzdzUHVDSGJ5VHJVZVNzaVR5bFNPYVV3czF2Uk9oaWY1bU9oQ3dOOE9lbmVKRWdPc0Jaa1lBSmxxeGNjUlB1RDBnbmJOZ25yUU5rNGhpVXh0YSs1WFFIb3duNHN5K3RKWXh6UW9IbmZLMU95SHl1c2tnTmJGekxHSzliTXBleXM0T2E1eFBxVUxMeUhXVVg0SjJEY0xjNG8rNFpraFBPdXhSbzlucWx5WHdtNXYvL21ZU2pxcVkzTEtQdTlDcXdVV0NjRkxXK01RMWl5WEpVcGdtYityYTZtME5NYlRrcElxOW5LOHQzelhXNDRScW9yVjN2VTR6L25rU1p3ZCtBMmxXT1dWdVY4SC9oZThCTDd6Nm5LODMrWElLTjZlbHI0eGd0b3lrSngzbzF1Z2xyaGN1MmlNWExTTS8yMmpaZTNLOWgyc0hveFlvaXhnNG00RndVODZYN2xSNXpDeDk1NDV1MGc5bEJVUHdNWG11QklkS3JITGhtbEEyTHoxWXFpNHZWYmZNb3BOKzdYRU5oQnljUVRmWWJKRzh2UVJ4aGhmYlNKaHp3VDBuanhZRk5FVVVQOFJzZ3Z6YTJ2bkpxYWVKWVQ5TnEwUm5KelpneWVDL3Q2Uk52Q3dHbE15RE05RXM0WHRNL1NUZXZVeXlxS0ZzTG9HKzNoMUpSeFJsQ0Q3a2hrcXRXc0dhV3RUUEdjbTVDK29vZFFuT3BYR0YvQ1lYWVlCTzBSL0EwVWo2MVhQU08yRnBlaDFBcUUwdGFVM1I3RkN4QXBlR05QRlNjQUhVZ3R4cmMrd09zQ2d1S0gvakdySVNKbXUva21RU29mcExqajh0dzMwdmRDc2NxTmVDQldFeVNLZ1dZK0ppcjVWb3BHK2RJT0tMaUhzV3hPVnd1MENhWEozU0dWbXkyaUlKenRQL291NUFVNkhseUVucXNCN3NTdFF6SlJ4dkozS2FGNGU4eHkxK2grZFNNRHM0K0ppZnQrbm5TU1NlYTh1MDlKMUR1TGFKRUYxcy80QUU1ZGw2TG5waUtsMWE0Vi9EK0FEeWZ0a3FrclVEUmlqVVJkVCtlMTZSeDFiR3ZPNm1MN2RGUlBDZ2ZvQmNDNC9zTDJ6WGlFNU1nVHpnRnkrVXdWTkIybWZPUXFQbmNqMkQycUtZN2gyS0w5dFdWTVE1V3ZiMWVsSHo4YkV3S2hsVmFTd29vSDRXMzZ1c3VyL3M3WnNxcjN5Uk5aZi91T1BwdHd0NVhHTGhZUDFRZlBpZFFGaUVGUGRMQk5rd09MRHRJUEhGd3hZRVRsb2Y2RHM5NE5LdzNiY04vNXNQN1lqcE5weUtqIiwiZGF0YWtleSI6IkFRRUJBSGh3bTBZYUlTSmVSdEptNW4xRzZ1cWVla1h1b1hYUGU1VUZjZTlScTgvMTR3QUFBSDR3ZkFZSktvWklodmNOQVFjR29HOHdiUUlCQURCb0Jna3Foa2lHOXcwQkJ3RXdIZ1lKWUlaSUFXVURCQUV1TUJFRURKc3pvUXVteG5NcVlkaUwrQUlCRUlBNzFmaVp0Qjd5K1BIdXBJUmJER2RESEJLaUozVW1oSStvQ1NKK1VkOTN4NnJ3MEFmaWJ5aWhzMDl6NVZGWS9YbTNnancxVmltMEpCYmsyUUE9IiwidmVyc2lvbiI6IjIiLCJ0eXBlIjoiREFUQV9LRVkiLCJleHBpcmF0aW9uIjoxNjI5NjkyNzUyfQ==  public.ecr.aws/p4y8m7h
+ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+ unzip awscliv2.zip
+ sudo ./aws/install
+ aws configure
+ aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/p4y8m7h4
+ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+ unzip awscliv2.zip
+ which aws
+ ls -l /usr/local/bin/aws
+ sudo ./aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --update
+ aws --version
+ sudo ./aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --update
+ sudo rm /usr/local/bin/aws
+ sudo rm /usr/local/bin/aws_completer
+ sudo rm -rf /usr/local/aws-cli
+ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+ unzip awscliv2.zip
+ sudo ./aws/install
+ aws --version
+ sudo rm /usr/local/bin/aws
+ sudo rm /usr/local/bin/aws_completer
+ sudo rm -rf /usr/local/aws-cli
+ aws --version
+ sudo rm -rf /usr/local/aws
+ sudo rm /usr/local/bin/aws
+ sudo apt-get remove --auto-remove awscli
+ ln -s /home/ubuntu/.local/bin/aws /usr/bin/aws
+ which aws-cli
+ aws --version
+ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+ unzip awscliv2.zip
+ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+ unzip awscliv2.zip
+ sudo ./aws/install
+ /usr/local/bin/aws --version
+ /usr/local/bin/aws configure
+ /usr/local/bin/aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/p4y8m7h4
+ docker tag python:3.7-slim public.ecr.aws/p4y8m7h4/sabit:latest
+ docker push public.ecr.aws/p4y8m7h4/sabit:latest
+ ls
+ sudo nano web-deployment.yaml 
+ kubectl delete -f env-configmap.yaml,nginx-deployment.yaml,nginx-service.yaml,pgdata-persistentvolumeclaim.yaml,postgres-deployment.yaml,postgres-service.yaml,redis-deployment.yaml,redis-service.yaml,redisdata-persistentvolumeclaim.yaml,web-deployment.yaml,web-django-persistentvolumeclaim.yaml,web-service.yaml,web-static-persistentvolumeclaim.yaml
+ kubectl apply -f env-configmap.yaml,nginx-deployment.yaml,nginx-service.yaml,pgdata-persistentvolumeclaim.yaml,postgres-deployment.yaml,postgres-service.yaml,redis-deployment.yaml,redis-service.yaml,redisdata-persistentvolumeclaim.yaml,web-deployment.yaml,web-django-persistentvolumeclaim.yaml,web-service.yaml,web-static-persistentvolumeclaim.yaml
+ kubectl get all
+ kubectl describe po web-6958cf4c9c-tq4md
+ kubectl describe po web-7dfbf656d-xr9nn
+ kubectl get all
+ kubectl describe po web-6958cf4c9c-tq4md
+ kubectl describe po web-7dfbf656d-xr9nn
+ docker-compose down
+ docker system prune -f
+ docker images prune -f
+ docker images prune -f *
+ docker images prune -f $(docker images ls -q)
+ docker images prune -f $(docker image ls -q)
+ docker images ls -aq
+ docker images
+ docker images -q
+ docker images prune -f $(docker images -q)
+ docker images prune $(docker images -q)
+ docker image prune $(docker images -q)
+ docker image prune -f $(docker images -q)
+ docker image
+ docker image prune 
+ docker image rm -f $(docker images -q)
+ docker images
+ kubectl delete -f env-configmap.yaml,nginx-deployment.yaml,nginx-service.yaml,pgdata-persistentvolumeclaim.yaml,postgres-deployment.yaml,postgres-service.yaml,redis-deployment.yaml,redis-service.yaml,redisdata-persistentvolumeclaim.yaml,web-deployment.yaml,web-django-persistentvolumeclaim.yaml,web-service.yaml,web-static-persistentvolumeclaim.yaml
+ docker image rm -f $(docker images -q)
+ docker ps -a
+ docker ps
+ ls
+ docker images
+ kubectl apply -f env-configmap.yaml,nginx-deployment.yaml,nginx-service.yaml,pgdata-persistentvolumeclaim.yaml,postgres-deployment.yaml,postgres-service.yaml,redis-deployment.yaml,redis-service.yaml,redisdata-persistentvolumeclaim.yaml,web-deployment.yaml,web-django-persistentvolumeclaim.yaml,web-service.yaml,web-static-persistentvolumeclaim.yaml
+ kubectl get all
